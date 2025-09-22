@@ -7,7 +7,7 @@ const {id} =useParams();
     return(
         <>
         <main>
-            <FormEditUser id={parseInt(id)}/>
+            <FormEditUser id={id}/>
         </main>
         
         </>

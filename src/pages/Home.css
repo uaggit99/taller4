@@ -21,3 +21,15 @@ button{
     cursor: pointer;
 
 }
+span{
+    text-decoration: none;
+    padding: 8px 13px;
+    background-color: rgb(12, 85, 61);
+    color:beige;
+    margin: 0 15px;
+    border : 1px solid rgb(43, 110, 88);
+    border-radius: 7px;
+    cursor: pointer;
+
+
+}

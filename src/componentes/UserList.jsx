@@ -1,6 +1,6 @@
 import { useUsers } from "../hooks/useUsers";
 import { NavLink } from "react-router-dom";
-import "../pages/Home.css"
+import "../pages/Home.css";
 
 export const UserList = () => {
   const { users, setUsers } = useUsers();
@@ -16,28 +16,27 @@ export const UserList = () => {
 
   return (
     <>
-      
-        <h2>LISTA DE CLIENTES</h2>
+      <h2>LISTA DE CLIENTES</h2>
 
-        <div className="container">
-          {users.map((usuario) => (
-            <div key={usuario.id} className="container-cliente">
-              <p>Nombre: {usuario.nombre}</p>
-              <p>Email : {usuario.correo}</p>
-              <p>Ciudad: {usuario.ciudad}</p>
+      <div className="container">
+        {users.map((usuario) => (
+          <div key={usuario.id} className="container-cliente">
+            <p>Nombre: {usuario.nombre}</p>
+            <p>Email : {usuario.correo}</p>
+            <p>Ciudad: {usuario.ciudad}</p>
 
-              <NavLink
-                to={`/user/edit/:${usuario.id}`}               
-              >
-              <button>Editar</button>
-              </NavLink>
-              <button on onClick={() => deleteUser(usuario.id)}>
-                Eliminar
-              </button>
-            </div>
-          ))}
-        </div>
-      
+            <NavLink
+              to={`/user/edit/${usuario.id}`}
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              <span>Editar</span>
+            </NavLink>
+            <button on onClick={() => deleteUser(usuario.id)}>
+              Eliminar
+            </button>
+          </div>
+        ))}
+      </div>
     </>
   );
 };

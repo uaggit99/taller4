@@ -22,7 +22,8 @@ export function FormcreateUser(){
         }
 
     const nuevoUsuario = {
-    id: Date.now(),
+        
+    id: Date.now().valueOf,
     nombre: nombre,
     correo: correo,
     ciudad: ciudad
@@ -35,7 +36,7 @@ export function FormcreateUser(){
 
     return(
         <>
-        <h2>Formulario Creacion usuario</h2>
+        <h2>Formulario Crear usuario</h2>
         <form  action="GET"  lassName="formulario" onSubmit={crearUsuario}>
             <label htmlFor="nombre">Nombre  </label>
             <input type="text" id="nombre"  placeholder="Ingrese su nombre"  value={nombre}  onChange={(event)=> setNombre(event.target.value)} /><b></b><br></br>

@@ -2,15 +2,17 @@ import { useState } from "react";
 import { useUsers } from "../hooks/useUsers";
 import "../pages/EditarUsuario.css"
 
-export function FormEditUser(id) {
+export function FormEditUser({id}) {
   const { users, setUsers } = useUsers();
   
 
   const user = users.find((usuario) => usuario.id === id);
+  console.log(typeof(user))
 
   const [nombre, setNombre] = useState(user?.nombre);
   const [correo, setCorreo] = useState(user?.correo);
   const [ciudad, setCiudad] = useState(user?.ciudad);
+  console.log(nombre)
 
   if(!user){
     return alert("Usuario No existe")
@@ -35,7 +37,7 @@ export function FormEditUser(id) {
 
   return (
     <>
-      <h2>Formulario Creacion usuario</h2>
+      <h2>Formulario Modificacion usuario</h2>
       <form action="GET" lassName="formulario" onSubmit={editarUsuario}>
         <label htmlFor="nombre">Nombre </label>
         <input
