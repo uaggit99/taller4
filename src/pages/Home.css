@@ -1,0 +1,23 @@
+h2{
+    color:blue;
+    text-align: center;
+}
+
+.container{
+    padding: 20px;
+    background-color: rgb(221, 221, 173);
+}
+p{
+    padding: 7px 15px;
+    color:rgb(18, 50, 109)
+}
+button{
+    padding: 5px 12px;
+    background-color: rgb(12, 85, 61);
+    color:beige;
+    margin: 0 15px;
+    border : 1px solid rgb(43, 110, 88);
+    border-radius: 7px;
+    cursor: pointer;
+
+}

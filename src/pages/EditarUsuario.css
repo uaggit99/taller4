@@ -1,0 +1,25 @@
+form{
+    background-color: rgb(148, 170, 197);
+    text-align: center;
+    padding: 50px 0px;
+}
+label, input{
+    margin:15px 0px;
+    padding:10px;
+}
+input{
+    color: rgb(46, 107, 104);
+    font-size: 1rem;
+    border-radius: 10px;
+}
+label{
+    font-weight: bold;
+    color: rgb(12, 82, 82);
+    font-size: 1.1rem;
+}
+button{
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 1.1.rem;
+    cursor: pointer;
+}
