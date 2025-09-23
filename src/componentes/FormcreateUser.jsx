@@ -36,6 +36,7 @@ export function FormcreateUser(){
 
     return(
         <>
+        <main>
         <h2>Formulario Crear usuario</h2>
         <form  action="GET"  lassName="formulario" onSubmit={crearUsuario}>
             <label htmlFor="nombre">Nombre  </label>
@@ -46,6 +47,7 @@ export function FormcreateUser(){
             <input type="text" id="ciudad"  placeholder="Ingrese ciudad"  value={ciudad}  onChange={(event)=>setCiudad(event.target.value)} /><b></b><br></br>
             <button type="submit">Crear Usuario</button>
         </form>
+        </main>
                
         </>
     )

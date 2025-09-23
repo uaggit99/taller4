@@ -4,6 +4,7 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <>
+    <header>
       <nav className="navbar">
         <NavLink
           to="/"
@@ -24,6 +25,7 @@ function Navbar() {
           Edicion
         </NavLink>
       </nav>
+      </header>
     </>
   );
 }

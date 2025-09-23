@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { CrearUsers } from "./pages/CrearUsers";
 import { EditarUsuario } from "./pages/EditarUsuario";
+import Footer from "./componentes/Footer";
 //import {Footer} from "./componentes/Footer"
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/crear" element={<CrearUsers />} />
         <Route exact path="/user/edit/:id" element={<EditarUsuario />} />
       </Routes>
+      <Footer/>
     </>
   );
 }

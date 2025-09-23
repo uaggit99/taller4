@@ -37,6 +37,7 @@ export function FormEditUser({id}) {
 
   return (
     <>
+    <main>
       <h2>Formulario Modificacion usuario</h2>
       <form action="GET" lassName="formulario" onSubmit={editarUsuario}>
         <label htmlFor="nombre">Nombre </label>
@@ -71,6 +72,7 @@ export function FormEditUser({id}) {
         <br></br>
         <button type="submit">Guardar Usuario</button>
       </form>
+      </main>
     </>
   );
 }
