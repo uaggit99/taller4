@@ -5,6 +5,7 @@ import { Home } from "./pages/Home";
 import { CrearUsers } from "./pages/CrearUsers";
 import { EditarUsuario } from "./pages/EditarUsuario";
 import Footer from "./componentes/Footer";
+import { Notfound } from "./componentes/Notfound";
 //import {Footer} from "./componentes/Footer"
 
 function App() {
@@ -15,6 +16,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route exact path="/crear" element={<CrearUsers />} />
         <Route exact path="/user/edit/:id" element={<EditarUsuario />} />
+        <Route  exact path="*" element={<Notfound/>}
+        
+        />
       </Routes>
       <Footer/>
     </>
